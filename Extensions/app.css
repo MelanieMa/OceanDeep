@@ -1,0 +1,168 @@
+
+#Sea {
+  background: rgba(245,98,54,1);
+background: -moz-linear-gradient(top, rgba(245,98,54,1) 0%, rgba(245,98,54,1) 4%, rgba(88,50,201,1) 29%, rgba(24,42,240,1) 46%, rgba(22,3,148,1) 73%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,98,54,1)), color-stop(4%, rgba(245,98,54,1)), color-stop(29%, rgba(88,50,201,1)), color-stop(46%, rgba(24,42,240,1)), color-stop(73%, rgba(22,3,148,1)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(245,98,54,1) 0%, rgba(245,98,54,1) 4%, rgba(88,50,201,1) 29%, rgba(24,42,240,1) 46%, rgba(22,3,148,1) 73%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(245,98,54,1) 0%, rgba(245,98,54,1) 4%, rgba(88,50,201,1) 29%, rgba(24,42,240,1) 46%, rgba(22,3,148,1) 73%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(245,98,54,1) 0%, rgba(245,98,54,1) 4%, rgba(88,50,201,1) 29%, rgba(24,42,240,1) 46%, rgba(22,3,148,1) 73%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(245,98,54,1) 0%, rgba(245,98,54,1) 4%, rgba(88,50,201,1) 29%, rgba(24,42,240,1) 46%, rgba(22,3,148,1) 73%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f56236', endColorstr='#000000', GradientType=0 );
+  height: 3000px;
+  length: 2000px;
+  position: relative;
+  z-index: 800;
+}
+
+* {
+  font-family: 'Fredoka One', cursive;
+   font-size: 22px;
+   color: white;
+}
+
+.submarine {
+margin-left: 50%;
+
+}
+
+
+.hideSub{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+
+hr {
+  color: white;
+}
+
+.box {
+  max-height: 300px;
+  max-width: 300px;
+}
+.diver {
+  margin-left: 30%;
+}
+
+
+.fishyGroup0 {
+margin-top: 900px;
+animation-name: swim;
+animation-duration: 10s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+
+
+}
+.fishyGroup {
+
+  margin-top: 950px;
+  animation-name: swim;
+  animation-duration: 14s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+animation-timing-function: linear;
+
+}
+
+
+
+@keyframes  swim {
+
+from { transform: translateX(-800);}
+ to { transform: translateX(1450px);}
+
+ }
+.sky {
+
+}
+
+#dolphin {
+  z-index: 880;
+  left: 315px;
+  position: absolute;
+  margin-top: 280px;
+  transform: translateX(40px);
+  transform: rotate(45deg) translateX(40px) rotate(-45deg);
+  -webkit-animation: orbit2 4s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: orbit2 4s linear infinite; /* Firefox 5-15 */
+         -o-animation: orbit2 4s linear infinite; /* Opera 12+ */
+            animation: orbit2 4s linear infinite; /* Chrome, Firefox 16+,
+                                                     IE 10+, Safari 5 */
+
+}
+
+@-webkit-keyframes orbit2 {
+	from { 	-webkit-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  -webkit-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit2 {
+	from { 	-moz-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  -moz-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit2 {
+	from { 	-o-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  -o-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+	from { 	transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+h3 {
+
+  float: left;
+}
+#sun {
+ height: 340px;
+  position: absolute;
+  z-index: 860;
+  margin-top: 40px;
+  left: 270px;
+
+
+
+}
+
+.hideMe
+{
+    opacity:0;
+}
+#wave {
+
+  width: 50%;
+  float: left;
+  position: relative;
+  z-index: 900;
+  animation: UpDown 3s linear infinite;
+  margin-top: 200px;
+
+}
+
+
+@keyframes UpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 0;
+  }
+
+}
+
+#bottomdepth {
+  height: 2000px;
+  length: 2000px;
+  background-color: black;
+
+}
