@@ -25,10 +25,15 @@ margin-left: 50%;
 
 }
 
+.subplz {
+  background-color: yellow;
+  border-radius: 50%;
+}
 
 .hideSub{
      opacity:0;
 }
+
 .visible{
      opacity:1;
 }
